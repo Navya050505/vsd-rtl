@@ -1,0 +1,45 @@
+$date
+	Mon Sep  7 16:05:05 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_bad_case $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ c $end
+$var reg 2 % sel [1:0] $end
+$scope module uut $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ c $end
+$var wire 2 & sel [1:0] $end
+$var reg 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+0$
+1#
+0"
+0!
+$end
+#10
+1!
+b1 %
+b1 &
+#20
+0!
+b10 %
+b10 &
+#30
+b11 %
+b11 &
+#40

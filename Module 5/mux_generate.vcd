@@ -1,0 +1,57 @@
+$date
+	Mon Sep  7 16:37:27 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_mux_generate $end
+$var wire 4 ! y [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$var reg 1 $ sel $end
+$scope module uut $end
+$var wire 4 % a [3:0] $end
+$var wire 4 & b [3:0] $end
+$var wire 1 $ sel $end
+$var wire 4 ' y [3:0] $end
+$scope begin mux_gen[0] $end
+$upscope $end
+$scope begin mux_gen[1] $end
+$upscope $end
+$scope begin mux_gen[2] $end
+$upscope $end
+$scope begin mux_gen[3] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010 '
+b101 &
+b1010 %
+0$
+b101 #
+b1010 "
+b1010 !
+$end
+#10
+b101 !
+b101 '
+1$
+#20
+b1111 !
+b1111 '
+0$
+b0 #
+b0 &
+b1111 "
+b1111 %
+#30
+b0 !
+b0 '
+1$
+#40
