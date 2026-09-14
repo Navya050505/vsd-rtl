@@ -1,0 +1,22 @@
+digraph "mux" {
+label="mux";
+rankdir="LR";
+remincross=true;
+n5 [ shape=octagon, label="i0", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="i1", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="sel", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="y", color="black", fontcolor="black" ];
+c13 [ shape=record, label="{{<p9> A0|<p10> A1|<p11> S}|$50\nsky130_fd_sc_hd__mux2_1|{<p12> X}}" ];
+x0 [shape=box, style=rounded, label="BUF"];
+x1 [shape=box, style=rounded, label="BUF"];
+x2 [shape=box, style=rounded, label="BUF"];
+x3 [shape=box, style=rounded, label="BUF"];
+x0:e:e -> c13:p9:w [color="black", label=""];
+x1:e:e -> c13:p10:w [color="black", label=""];
+x2:e:e -> c13:p11:w [color="black", label=""];
+c13:p12:e -> x3:w:w [color="black", label=""];
+n5:e -> x0:w:w [color="black", label=""];
+n6:e -> x1:w:w [color="black", label=""];
+n7:e -> x2:w:w [color="black", label=""];
+x3:e:e -> n8:w [color="black", label=""];
+}
