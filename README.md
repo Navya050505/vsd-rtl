@@ -1,92 +1,59 @@
+# VSD RTL Design Portfolio
 
-## RTL Design & Synthesis on Cloud (GitHub Codespace)
+This repository contains my hands-on RTL design, simulation, synthesis and SKY130 technology-mapping work.
 
-This repository provides a ready-to-use **cloud-based lab** for RTL Design and Synthesis using open-source tools such as **Yosys**, **Icarus Verilog**, and **GTKWave**.
-All tools run inside a **GitHub Codespace** with **noVNC desktop access**, requiring no local installation.
+## Workshop Days
 
----
+### Day 1 – VLSI Fundamentals & MUX Design
+- VLSI fundamentals
+- MUX design
+- RTL simulation
+- GTKWave waveform analysis
+- Yosys synthesis
 
-### Step 1 – Launch Codespace
+### Day 2 – Timing Libraries, Synthesis & Flip-Flops
+- D Flip-Flop
+- Asynchronous reset
+- Hierarchical design
+- Flattened netlist
+- SKY130 standard-cell mapping
 
-Click **“Code → Codespaces → Create codespace on main”** to start your workspace on the cloud.
-GitHub will automatically build and set up your environment.
+### Day 3 – Sequential Logic, Counters & Timing
+- Sequential logic
+- Counter design
+- Reset operation
+- RTL simulation
+- GTKWave waveform analysis
+- Yosys synthesis
+- SKY130 technology mapping
 
-![Launch Codespace](images/1_launchCodeSpace.jpg)
+### Day 4 – RTL Simulation & Gate-Level Simulation
+- Ternary MUX
+- Blocking vs non-blocking
+- Synthesis-simulation mismatch
+- Gate-level simulation
+- SKY130 standard cells
 
----
+### Day 5 – RTL Design & Synthesis
+- If statements
+- Case statements
+- Incomplete if/case
+- MUX and DEMUX
+- Generate constructs
+- Partial assignments
+- Latch inference
+- Ripple Carry Adder
+- RTL synthesis and SKY130 mapping
 
-### Step 2 – Codespace Setup and Logs
+## Tools Used
 
-During setup, the Codespace installs all required tools.
-Wait for the setup logs to complete (approximately 7–10 minutes).
+- Verilog HDL
+- Icarus Verilog
+- GTKWave
+- Yosys
+- SKY130 standard-cell library
+- GitHub Codespaces
 
-![Codespace Logs](images/2_codespaceLog.jpg)
+## Objective
 
-After successful configuration, your container environment is ready.
-
-![Codespace Created](images/3_codepsaceCreated.png)
-
----
-
-### Step 3 – Open a Terminal
-
-Use **Terminal → New Terminal** inside VS Code to begin executing synthesis and simulation commands.
-
-![Open Terminal](images/4_openTerminal.png)
-
----
-
-### Step 4 – Verify Tool Installation
-
-Run the following commands to verify tool installation:
-
-```bash
-yosys
-iverilog
-```
-
-Both should display their version information, confirming correct setup.
-
-![Test Yosys and Icarus Verilog](images/5_testYosys_Iverilog.png)
-
----
-
-### Step 5 – Launch noVNC Desktop
-
-Go to the **Ports** tab and click the **globe icon** next to the forwarded port (6080) to open the desktop environment in your browser.
-
-![Open VNC Port](images/6_openVNC.jpg)
-
----
-
-### Step 6 – Access VNC Interface
-
-In the directory listing, select `vnc_lite.html` to open a lightweight graphical desktop.
-
-![VNC Lite Interface](images/7_vnc_lite.jpg)
-
----
-
-### Step 7 – Run Workshop Files and GTKWave
-
-Navigate to your workspace folder and open GTKWave to analyze waveform outputs:
-
-```bash
-cd /workspaces/vsd-rtl/
-ls
-gtkwave
-```
-
-![GTKWave Desktop](images/8_workshopFolderAndgtkwaveTesting.jpg)
-
----
-
-### Summary
-
-Your cloud lab is now fully set up.
-You can perform RTL design, synthesis, simulation, and waveform analysis directly from your browser, without installing any local software.
-
----
-
-**Repository:** [vsdip/vsd-rtl](https://github.com/vsdip/vsd-rtl)
-**Maintained by:** VLSI System Design (VSD)
+To build practical skills in RTL design, simulation, synthesis and digital IC design using an open-source VLSI design flow.
