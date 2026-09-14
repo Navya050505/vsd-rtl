@@ -1,0 +1,24 @@
+digraph "top_hierarchical" {
+label="top_hierarchical";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="d", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="q", color="black", fontcolor="black" ];
+n4 [ shape=diamond, label="u1.clk", color="black", fontcolor="black" ];
+n5 [ shape=diamond, label="u1.d", color="black", fontcolor="black" ];
+n6 [ shape=diamond, label="u1.q", color="black", fontcolor="black" ];
+c10 [ shape=record, label="{{<p7> C|<p8> D}|$47\n$_DFF_P_|{<p9> Q}}" ];
+x0 [shape=box, style=rounded, label="BUF"];
+x1 [shape=box, style=rounded, label="BUF"];
+x2 [shape=box, style=rounded, label="BUF"];
+n1:e -> c10:p7:w [color="black", label=""];
+n1:e -> x1:w:w [color="black", label=""];
+n2:e -> c10:p8:w [color="black", label=""];
+n2:e -> x0:w:w [color="black", label=""];
+x2:e:e -> n3:w [color="black", label=""];
+x1:e:e -> n4:w [color="black", label=""];
+x0:e:e -> n5:w [color="black", label=""];
+c10:p9:e -> n6:w [color="black", label=""];
+n6:e -> x2:w:w [color="black", label=""];
+}

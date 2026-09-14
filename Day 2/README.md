@@ -1,47 +1,66 @@
-# Day 2 – CMOS and MOSFET Fundamentals
+# Day 2 – Timing Libraries, Synthesis & Flip-Flops
 
-## 1. CMOS
+## Overview
 
-CMOS stands for Complementary Metal-Oxide-Semiconductor.
+Day 2 focuses on digital timing concepts, standard-cell libraries, RTL synthesis and flip-flop implementation.
 
-CMOS technology uses two types of MOSFETs:
-- NMOS
-- PMOS
+## Topics Covered
 
-## 2. NMOS
+- CMOS inverter fundamentals
+- D Flip-Flop
+- D Flip-Flop simulation
+- Asynchronous reset D Flip-Flop
+- RTL synthesis using Yosys
+- Synthesized netlists
+- Hierarchical design
+- Flattened netlists
+- SKY130 standard-cell library
+- Technology mapping
+- Netlist visualization
 
-NMOS is an N-channel MOSFET.
+## Practical Work
 
-It is mainly used to pull the output toward Logic 0.
+### 1. CMOS Inverter
+Implemented a basic CMOS inverter at RTL abstraction using Verilog.
 
-## 3. PMOS
+### 2. D Flip-Flop
+Designed a positive-edge-triggered D Flip-Flop and verified its behavior using a testbench and GTKWave.
 
-PMOS is a P-channel MOSFET.
+### 3. Asynchronous D Flip-Flop
+Implemented a D Flip-Flop with asynchronous reset and verified its waveform.
 
-It is mainly used to pull the output toward Logic 1.
+### 4. Synthesis
+Synthesized the RTL designs using Yosys and generated netlists.
 
-## 4. CMOS Inverter
+### 5. Hierarchical Design
+Created a top module containing a D Flip-Flop submodule and generated a hierarchical netlist diagram.
 
-A CMOS inverter consists of:
-- One PMOS transistor
-- One NMOS transistor
+### 6. Flattened Netlist
+Used the Yosys `flatten` pass to convert the hierarchical design into a flattened representation.
 
-When the input is 0, the output is 1.
+### 7. SKY130 Technology Mapping
+Used the SKY130 standard-cell timing library for technology mapping.
 
-When the input is 1, the output is 0.
+## Tools Used
 
-### Truth Table
+- Verilog HDL
+- Icarus Verilog
+- GTKWave
+- Yosys
+- SKY130 standard-cell library
+- GitHub Codespaces
 
-| Input | Output |
-|---|---|
-| 0 | 1 |
-| 1 | 0 |
+## Key Learning
 
-## 5. Key Learning
+- Understanding D Flip-Flop operation
+- Understanding asynchronous reset
+- RTL simulation and waveform analysis
+- RTL synthesis
+- Hierarchical and flattened netlists
+- Standard-cell technology mapping
+- Basic timing-library concepts
+- SKY130 digital design flow
 
-- CMOS technology
-- NMOS
-- PMOS
-- CMOS inverter
-- Logic 0 and Logic 1
-- Basic transistor-level operation
+## Conclusion
+
+Day 2 provided practical experience with flip-flop design, simulation, synthesis, hierarchical design and technology mapping using the SKY130 standard-cell library.
